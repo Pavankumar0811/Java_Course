@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Arr_lis_user {
     public static void main() {
 
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<String>(10);
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of fruit: ");

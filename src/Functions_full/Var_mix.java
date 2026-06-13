@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Var_mix {
     public static void main() {
-        mix(10,20,"pavan", "kumar","love","spoorthi");
+        mix(10,20,"pavan", "kumar");
     }
 
     static void mix(int a, int b, String...v) {

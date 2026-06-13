@@ -9,8 +9,8 @@ public class Pass_value_string {
         System.out.println(name2);
     }
 
-    static String messange(String name,String father){
-        String ar = name + father;
+    static String messange(String name,String name2){
+        String ar = name + name2;
         return ar;
     }
 }

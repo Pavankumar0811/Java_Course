@@ -11,6 +11,7 @@ public class Change_value {
     }
 
     static void change_value(int[] nums) {
+
         nums[0]=99;
     }
 }

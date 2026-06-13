@@ -12,9 +12,10 @@ public class for_array_str {
 
         for(int i = 0 ; i < arr.length ; i++){
             arr[i] = sc.next();            // we should have to use next()
-
+            System.out.print(arr[i] + " ");
         }
-        arr[0] = "pavan";            // array of 0th index is changed to pavan
-        System.out.println(Arrays.toString(arr));
+
+//        arr[0] = "pavan";            // array of 0th index is changed to pavan
+//        System.out.println(Arrays.toString(arr));
     }
 }

@@ -7,16 +7,18 @@ public class Another_sum {
         int ans = sum2();
         System.out.println(ans);
     }
+
+    
     static int sum2(){
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Please enter the first number");
-        int first = input.nextInt();
+        int first = sc.nextInt();
         System.out.println("Please enter the second number");
-        int second = input.nextInt();
+        int second = sc.nextInt();
         System.out.println("Please enter the third number");
-        int third = input.nextInt();
+        int third = sc.nextInt();
         int sum2 = first + second + third;
-        input.close();
+        sc.close();
         return sum2;
 
 

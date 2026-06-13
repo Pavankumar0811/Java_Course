@@ -18,5 +18,6 @@ public class Upper_Lower_alph {
             System.out.println("Special character");
         }
 
+
     }
 }

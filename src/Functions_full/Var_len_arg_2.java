@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Var_len_arg_2 {
     public static void main() {
-        gree("pavan", "kumar", "spoorthi" , "love");
+        gree("pavan", "kumar");
     }
 
     static void gree(String...v){

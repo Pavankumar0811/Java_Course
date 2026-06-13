@@ -14,7 +14,6 @@ public class Max_arr {
         if(arr[i]>maxval){
             maxval=arr[i];
         }
-
       }
       return maxval;
     }

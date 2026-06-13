@@ -13,7 +13,7 @@ public class Palandrome {
             String rev = "";
 
             for (int i = str.length() - 1; i >= 0; i--) {
-                rev += str.charAt(i);
+                rev = rev + str.charAt(i);
             }
 
             if (str.equals(rev))

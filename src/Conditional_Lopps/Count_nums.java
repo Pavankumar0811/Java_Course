@@ -9,8 +9,7 @@ public class Count_nums {
         int count = 0;
 
         while(a >0){
-            int rem = a % 10;
-            if(rem == 3){
+            if(a % 10 == 5){
              count++;
             }
             a = a / 10;

@@ -16,7 +16,7 @@ public class Type_Casting {
 
         // maximum a byte can store is 256 i had provided 257 so it will give remianing value that is 2
         int z = 258;
-        byte c = (byte)z;
+        byte c = (byte)(z);
 
         System.out.println(c);
 
