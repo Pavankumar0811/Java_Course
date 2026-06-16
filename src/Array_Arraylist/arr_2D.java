@@ -16,6 +16,6 @@ public class arr_2D {
 
         System.out.println(Arrays.toString(arr2D[0]));   // this will print the 0 th index in the array
 
-        System.out.println(arr2D[0][1]);           // this will print only the 0th element 1 index elemet
+        System.out.println(arr2D[0][2]);           // this will print only the 0th element 1 index elemet
     }
 }

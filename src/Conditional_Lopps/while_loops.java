@@ -17,6 +17,6 @@ public class while_loops {
         int n = 1;
         do{
             System.out.println("pavan kumar");
-        }while(n!=1);
+        }while(true);
     }
 }

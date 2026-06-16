@@ -2,7 +2,7 @@ package Functions_full;
 
 public class Block_scoping {
     public static void main() {
-      /*  int a = 10;                 // see one varibale cannot be assigned to datatype
+      /*  int a = 10;                 // see one varibale cannot be assigned to different datatype
         String a = "pavan";
         {
             int a = 20;             //we should to inialize new one to create new one by INT

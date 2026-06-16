@@ -7,12 +7,12 @@ public class For_2D {
 
        Scanner sc = new Scanner(System.in);
        //row  col
-       int[][] arr = new int[5][4];
+       int[][] arr = new int[3][3];
 
-       for (int row = 0; row < 4; row++) {
-           for (int col = 0; col < 4; col++) {
+       for (int row = 0; row < 3; row++) {
+           for (int col = 0; col < 3; col++) {
                arr[row][col] = sc.nextInt();
-               System.out.print(arr[row][col] + "");
+               System.out.print(arr[row][col] + "   ");
 
            }
            System.out.println();

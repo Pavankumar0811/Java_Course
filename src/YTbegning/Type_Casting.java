@@ -22,7 +22,7 @@ public class Type_Casting {
 
         byte d = 20;
         byte e = 60;
-        byte g = 50;
+        byte g = 127; // it is the last capacity
         int h = d*e/g;
         System.out.println(h);
 
