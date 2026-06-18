@@ -4,7 +4,7 @@ public class Search2_asc {
     public static void main(String[] args) {
 
         int[] arr = {-1,10, 20, 50, 100, 500, 1000, 1500};
-        int target = 100;
+        int target = 1;
 
 
         int start = 0;

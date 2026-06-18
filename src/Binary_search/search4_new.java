@@ -2,7 +2,7 @@ package Binary_search;
 
 public class search4_new {
     public static void main(String[] args) {
-        int[] arr = {100,90,80,70,60,50};
+        int[] arr = {100,90,80,70,60,50,10};
         int target = 20;
 
         int ans = seach(arr,target);
