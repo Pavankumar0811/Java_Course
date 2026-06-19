@@ -18,8 +18,8 @@ public class Search3 {
             int mid = (start + end) / 2;
 
             if (arr[mid] == target) {
-                result = mid;
-                break;
+                System.out.println(mid);
+                return;
 
             } else if (isAscending) {
 

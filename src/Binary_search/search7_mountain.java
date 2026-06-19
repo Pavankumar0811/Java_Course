@@ -2,7 +2,8 @@ package Binary_search;
 
 public class search7_mountain {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,3,2,1};
+        int[] arr = {10,20,30,40,50,60,30,20,10};
+       // int[] arr = {1,2,1,3,5,6,7};
         int start = 0;
         int end = arr.length-1;
         int result = -1;
@@ -13,9 +14,9 @@ public class search7_mountain {
             if(mid < arr.length - 1 && arr[mid] < arr[mid + 1]){
               start = mid+1;
             }else{
-                result = mid;
                 end = mid-1;
             }
+            result = mid;
         }
         System.out.println(result);
     }

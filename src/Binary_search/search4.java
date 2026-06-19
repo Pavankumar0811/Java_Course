@@ -3,29 +3,29 @@ package Binary_search;
 public class search4 {
 
         // Function 1 : check ascending or descending
-        public static boolean isAscending(int[] bin) {
-            return bin[0] < bin[bin.length - 1];
+        public static boolean isAscending(int[] nums) {
+            return nums[0] < nums[nums.length - 1];
         }
 
         // Function 2 : binary search
-        public static int binarySearch(int[] bin, int target, boolean ascending) {
+        public static int binarySearch(int[] nums, int target, boolean ascending) {
 
             int left = 0;
-            int right = bin.length - 1;
+            int right = nums.length - 1;
             int result = -1;
 
             while (left <= right) {
 
                 int mid = (left + right) / 2;
 
-                if (bin[mid] == target) {
+                if (nums[mid] == target) {
                     result = mid;
                     break;
 
                 } else if (ascending) {
 
                     // Ascending logic
-                    if (bin[mid] < target) {
+                    if (nums[mid] < target) {
                         left = mid + 1;   // go right
                     } else {
                         right = mid - 1;  // go left
@@ -34,7 +34,7 @@ public class search4 {
                 } else {
 
                     // Descending logic
-                    if (bin[mid] > target) {
+                    if (nums[mid] > target) {
                         left = mid + 1;   // go right
                     } else {
                         right = mid - 1;  // go left

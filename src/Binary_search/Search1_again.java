@@ -4,7 +4,7 @@ public class Search1_again {
     public static void main(String[] args) {
         int[] arr = {10,9,7,6,5,4,3,2,1};
 
-        int target = 5000;
+        int target = 500;
         int start = 0;
         int end = arr.length-1;
         int result = -1;
@@ -12,8 +12,8 @@ public class Search1_again {
         while(start<=end){
             int mid = (start + end )/2;
             if(arr[mid]==target){
-                result = mid;
-                break;
+                System.out.println(mid);
+                return;
             }
             else if(arr[mid]>target){
                 start = mid+1;
