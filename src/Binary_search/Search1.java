@@ -12,7 +12,7 @@ public class Search1 {
         int end = arr.length-1;
 
         while(start<=end){
-            int mid = (start+end)/2;       // if the index elemt exceed the interger datatype we should hav eto use start + (end - start)/2
+            int mid = (start+end)/2;       // if the index element exceed the integer datatype we should hav eto use start + (end - start)/2
             if(target<arr[mid]){
                 end = mid-1;
             }else if(target>arr[mid]){

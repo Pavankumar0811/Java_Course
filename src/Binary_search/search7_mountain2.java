@@ -19,6 +19,6 @@ public class search7_mountain2 {
                 start = mid+1;
             }
         }
-        return start;
+        return start;  // or mid
     }
 }

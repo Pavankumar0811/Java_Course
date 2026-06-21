@@ -21,15 +21,17 @@ public class sample {
         int sizeOfArray = sc.nextInt();
 
 
-        ArrayList<Integer> list = new ArrayList<>(sizeOfArray);
-        System.out.println("press (1) to add press (2) to remove press (3) to print the length of the array");
-        int option = sc.nextInt();
+
 
         while(true) {
 
+            ArrayList<Integer> list = new ArrayList<>(sizeOfArray);
+            System.out.println("press (1) to add press (2) to remove press (3) to print the length of the array");
+            int option = sc.nextInt();
+
             switch (option) {
                 case 1:
-                    System.out.println("Eneter ele to add");
+                    System.out.println("Eneter element to add");
                     Integer fruit = sc.nextInt();
                     list.add(fruit);
                     break;

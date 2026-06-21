@@ -3,7 +3,7 @@ package Binary_search;
 public class search9_first_and_last {
     public static void main(String[] args) {
 
-        int[] nums = {5, 7, 7, 8,9, 10,11};
+        int[] nums = {5, 7,7,7,7,7,7, 8,9, 10,11};
         int target = 7;
 
         int[] ans = {-1, -1};

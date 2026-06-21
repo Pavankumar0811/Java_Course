@@ -2,9 +2,9 @@ package Binary_search;
 
 public class search13_rotatedarray {
     public static void main(String[] args) {
-        int[] nums = {6, 7, 0, 1, 2, 4, 5};
-//        int[] nums = {4,5,6,7,0,1,2};
-        int target = 7;
+  //      int[] nums = {6, 7, 0, 1, 2, 4, 5};
+        int[] nums = {4,5,6,7,0,1,2};
+        int target = 0;
         System.out.println(search(nums,target));
     }
 
@@ -21,7 +21,7 @@ public class search13_rotatedarray {
 
                 // Left half is sorted
                 if (nums[start] <= nums[mid]) {
-                    if (target > nums[mid] && target <= nums[start]) {
+                    if (target >= nums[start] && target < nums[mid]) {
                         end = mid - 1;   // target in left half
                     } else {
                         start = mid + 1; // target in right half

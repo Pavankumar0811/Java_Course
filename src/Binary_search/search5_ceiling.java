@@ -6,7 +6,7 @@ public class search5_ceiling {   // top element should be find means greater tha
         // return the smallest number that is greater than target
 
         int[] arr = {2,3,5,9,14,16,18};
-        int target = 19;
+        int target = 17;
         int ans = ceiling(arr, target);
         System.out.println(ans);
     }
