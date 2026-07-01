@@ -1,4 +1,4 @@
-package Linear_search;
+package Leet_code_problems;
 
 public class search11_leetcode {
     public static void main(String[] args) {
@@ -10,8 +10,9 @@ public class search11_leetcode {
         int maxvalue =0;
 
         for(int i=0;i<arr.length;i++){
-               int sum = 0;
+            int sum = 0;
             for(int j=0;j<arr[i].length;j++){
+
                 sum = sum+arr[i][j];
 
                 if(sum>maxvalue){

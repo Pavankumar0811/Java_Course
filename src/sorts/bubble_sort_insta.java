@@ -2,7 +2,7 @@ package sorts;
 
 import java.util.Arrays;
 
-public class bubble_sort2 {
+public class bubble_sort_insta {
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40, 50};
 

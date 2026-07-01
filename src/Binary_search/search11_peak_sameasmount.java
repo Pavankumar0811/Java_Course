@@ -18,7 +18,7 @@ public class search11_peak_sameasmount {
             if(nums[mid]>nums[mid+1]){
                 end = mid;
             }else{
-                start = mid-1;
+                start = mid+1;
             }
         }
         return start;

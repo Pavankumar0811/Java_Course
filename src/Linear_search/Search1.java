@@ -13,18 +13,14 @@ public class Search1 {
         int[] arr = {0,2,14,11,12,16};
 
         int i = 0;
-        int ans = 0;
-
-        for(i = 0; i < arr.length; i++){
+        for(i = 0; i < arr.length;){
         if(arr[i]==num){
-             ans = arr[i];
             System.out.println(i);
-            break;
-           }
-          }
-           if(num!=ans){
-            System.out.println("not found");
-            }
+             return;
+           }else{
+            i++;
+        }
+        }
 
 
         }

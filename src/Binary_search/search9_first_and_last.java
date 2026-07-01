@@ -1,9 +1,11 @@
 package Binary_search;
 
+import java.util.Arrays;
+
 public class search9_first_and_last {
     public static void main(String[] args) {
 
-        int[] nums = {5, 7,7,7,7,7,7, 8,9, 10,11};
+        int[] nums = {5, 7,7,7, 8, 10,11};
         int target = 7;
 
         int[] ans = {-1, -1};
@@ -11,8 +13,10 @@ public class search9_first_and_last {
         ans[0] = search(nums, target, true);
         ans[1] = search(nums, target, false);
 
-        System.out.println("First position: " + ans[0]);
-        System.out.println("Last position: " + ans[1]);
+//        System.out.println("First position: " + ans[0]);
+//        System.out.println("Last position: " + ans[1]);
+
+        System.out.println(Arrays.toString(ans));
     }
 
 //    public int[] searchRange(int[] nums, int target) {
@@ -47,9 +51,9 @@ public class search9_first_and_last {
             }else{
                ans = mid;
                if(findStartIndex== true){
-                   end = mid-1;
+                   end--;
                }else{
-                   start = mid+1;
+                   start++;
                }
             }
         }

@@ -3,7 +3,7 @@ package Binary_search;
 public class search8_letters {
     public static void main(String[] args) {
         char[] letters = {'c','f','j'};
-        char target = 'a';
+        char target = 'f';
 
         char ans = nextGreatestLetters(letters,target);
         System.out.println(ans);

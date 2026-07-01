@@ -1,5 +1,7 @@
 package Binary_search;
 
+//no need of this question
+
 // amazon question find infinite array
 
 public class search10_infitearray {

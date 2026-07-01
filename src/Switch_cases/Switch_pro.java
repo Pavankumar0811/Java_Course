@@ -9,7 +9,7 @@ public class Switch_pro {
        String fru = input.nextLine();
 
        switch (fru) {
-           case("apple"):
+           case "apple":
                System.out.println("The fruit is apple");
                break;
            case"orange":

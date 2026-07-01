@@ -20,7 +20,7 @@ public class search13_rotatedarray {
                 }
 
                 // Left half is sorted
-                if (nums[start] <= nums[mid]) {
+                else if (nums[start] <= nums[mid]) {
                     if (target >= nums[start] && target < nums[mid]) {
                         end = mid - 1;   // target in left half
                     } else {
