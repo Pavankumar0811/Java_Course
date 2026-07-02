@@ -17,12 +17,11 @@ public class search20_sqrt {
             if(mid * mid == x) {
                 return (int)mid;         // exact square root
             } else if(mid * mid < x) {
-                result = (int)mid;       // store candidate
                 start = (int)mid + 1;   // go right
             } else {
                 end = (int)mid - 1;     // go left
             }
         }
-        return result;
+        return start;
     }
 }

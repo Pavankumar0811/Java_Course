@@ -9,7 +9,7 @@ public class insertion_sort {
         System.out.println(Arrays.toString(arr));
     }
 
-    static void insertionSort(int[] arr) {
+    static int[] insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int key = arr[i];
             int j = i - 1;
@@ -19,6 +19,7 @@ public class insertion_sort {
             }
             arr[j + 1] = key;  // insert at correct position
         }
+        return arr;
     }
 
 }

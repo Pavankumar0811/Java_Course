@@ -3,8 +3,8 @@ package Binary_search;
 public class search18_koko {
     public static void main(String[] args) {
 //        int[] piles = {3,6,7,11};
-        int[] piles = {30,11,23,4,20};
-        int h = 5;
+        int[] piles = {3,6,7,11};
+        int h = 8;
 
         System.out.println(koko(piles, h));
     }
