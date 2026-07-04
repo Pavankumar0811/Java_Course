@@ -1,44 +1,37 @@
 package Binary_search;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class sample {
     public static void main(String[] args) {
-        int[] piles = {3,6,7,11};
-        int h = 8;
-
-        System.out.println(search(piles, h));
+        int[] arr = {4,3,2,7,8,2,3,1};
+        System.out.println(search(arr));
     }
 
-    public static int search(int[] piles, int h) {
-       int start = 1;
-       int end = 0;
+    public static List<Integer> search(int[] arr) {
+       int i = 0;
 
-       for (int i = 0; i < piles.length; i++){
-           if(piles[i] > end){
-               end = piles[i];
-           }
-       }
-
-       int result = end;
-
-       while(start <= end){
-           int mid = start + (end - start)/2;
-
-           int hour = 0;
-
-           for(int i = 0; i < piles.length; i++){
-               hour = hour + (piles[i] + mid -1)/mid;
-           }
-
-           if(hour <= h){
-               result = mid;
-               end = mid -1;
+       while(i < arr.length){
+           int crt = arr[i]-1;
+           if(arr[i] != arr[crt]){
+               int temp = arr[crt];
+               arr[crt] = arr[i];
+               arr[i] = temp;
            }else{
-               start = mid + 1;
+               i ++;
            }
        }
-       return result;
+        List<Integer> list = new ArrayList<Integer>();
+       for(int j=0;j<arr.length;j++){
+           if(arr[j] != j + 1){
+               list.add(j + 1);
+           }
+       }
+       return list;
     }
+
+
 }
