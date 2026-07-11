@@ -1,8 +1,6 @@
-package Array;
+package Array_strivers;
 
 // leetcode 1752
-
-import java.util.Arrays;
 
 public class checking {
     static void main(String[] args) {

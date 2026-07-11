@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 public class max_subarray {
     public static void main(String[] args) {

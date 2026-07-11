@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 public class missing_forloop {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 // two sum
 import java.util.Arrays;
 import java.util.HashMap;

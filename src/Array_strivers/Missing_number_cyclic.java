@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 public class Missing_number_cyclic {
     static void main(String[] args) {

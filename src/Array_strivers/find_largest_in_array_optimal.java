@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 public class find_largest_in_array_optimal {
     static void main(String[] args) {

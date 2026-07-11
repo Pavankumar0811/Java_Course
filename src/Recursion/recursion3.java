@@ -7,7 +7,7 @@ public class recursion3 {
     }
 
     static int fibo(int n) {
-        if(n < 2) {
+        if(n < 2) {       // base condition
             return n;
 
         }

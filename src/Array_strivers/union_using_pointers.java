@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 public class union_using_pointers {
     static void main(String[] args) {

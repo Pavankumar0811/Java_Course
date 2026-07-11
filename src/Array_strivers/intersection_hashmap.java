@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 import java.util.ArrayList;
 import java.util.HashSet;

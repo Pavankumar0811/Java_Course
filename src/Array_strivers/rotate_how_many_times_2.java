@@ -1,4 +1,4 @@
-package Array;
+package Array_strivers;
 
 public class rotate_how_many_times_2 {
     static void main(String[] args) {

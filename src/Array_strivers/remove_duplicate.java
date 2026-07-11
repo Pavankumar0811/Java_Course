@@ -1,6 +1,4 @@
-package Array;
-
-import java.util.Arrays;
+package Array_strivers;
 
 public class remove_duplicate {
     static void main(String[] args) {
