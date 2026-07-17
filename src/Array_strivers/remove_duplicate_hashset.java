@@ -1,5 +1,7 @@
 package Array_strivers;
 
+// O(n) and O(n)
+
 import java.util.HashSet;
 
 public class remove_duplicate_hashset {

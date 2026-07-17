@@ -2,7 +2,7 @@ package Array_strivers;
 
 public class rotate_how_many_times_2 {
     static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6};
+        int[] arr = {1,2,3,4,5};
         int n = arr.length;
         int d = 3;
 
