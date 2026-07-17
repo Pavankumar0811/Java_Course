@@ -4,24 +4,25 @@ import java.util.Arrays;
 
 public class sample {
     public static void main(String[] args) {
-        int[] arr = {5,0,0,1,4};
-        System.out.println(bubble(arr));
+        int[] arr = {5,3,1,2,4,0};
+
+        System.out.println(Arrays.toString(bubble(arr)));
+
     }
 
-    public static String bubble(int[] arr) {
-        for(int i = 0; i < arr.length-1; i++){
-            int minIdx = i;
-            for(int j = i+1; j < arr.length; j++){
-                if(arr[j] < arr[minIdx]){
-                    minIdx = j;
-                }
+    public static int[] bubble(int[] arr) {
+        int i = 0;
+
+        while(i < arr.length){
+            int correct = arr[i];
+            if(arr[i] != arr[correct]){
+                int temp = arr[correct];
+                arr[correct] = arr[i];
+                arr[i] = temp;
+            }else{
+                i ++;
             }
-            int temp = arr[minIdx];
-            arr[minIdx] = arr[i];
-            arr[i] = temp;
         }
-
-
-       return Arrays.toString(arr);
+        return arr;
     }
 }

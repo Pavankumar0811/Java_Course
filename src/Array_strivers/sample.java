@@ -1,31 +1,49 @@
 package Array_strivers;
+import Array_Arraylist.Array;
 
 import java.util.*;
 
 public class sample {
-    public static void main(String[] args) {
-        int [] arr1 = {5,5,4,1,2,3};
-        int [] arr2 = {5,5,4,1,5,2};
-
-        System.out.println(main1(arr1,arr2));
+    static void main(String[] args) {
+        int[][] arr = {
+                {1, 2, 3, 4, 5},
+                {6 ,7 ,8 ,9, 10},
+                {11,12,13,14,15},
+        };
+        System.out.println(main1(arr));
     }
 
-    public static List<Integer> main1(int[] arr1, int[] arr2) {
-        ArrayList<Integer> list = new ArrayList<>();
-        int i = 0;
-        int j =0;
+    static List<Integer> main1(int[][] arr) {
+      List<Integer> list = new ArrayList<>();
 
-        while(i < arr1.length && j < arr2.length ){
-            if(arr1[i] == arr2[j]){
-                list.add(arr1[i]);
-                i++;
-                j++;
-            }else if(arr1[i] < arr2[j]){
-                i++;
-            }else{
-                j++;
-            }
-        }
-        return list;
+      int top = 0;  //1
+      int bottom = arr.length - 1; //
+      int left = 0;
+      int right = arr[0].length - 1;  //3
+
+      while(left <= right && top <= bottom){
+          for(int i =top; i <= right; i++){
+              list.add(arr[top][i]);
+          }
+          top++;
+          for(int i = top; i <= bottom; i++ ){
+              list.add(arr[i][right]);
+          }
+          right--;
+          if(top <= bottom){
+              for(int i = right;i >=left; i-- ){
+                  list.add(arr[bottom][i]);
+              }
+          }
+          bottom--;
+          if(left<= right){
+              for(int i = bottom; i >= top; i++ ){
+                  list.add(arr[i][left]);
+              }
+          }
+          left++;
+
+      }
+      return list;
     }
 }
