@@ -1,5 +1,7 @@
 package Array_strivers;
 
+// O(n^2) O(1)
+
 public class missing_forloop {
     public static void main(String[] args) {
         int[] arr1 = {1,2,3,4};
@@ -8,7 +10,7 @@ public class missing_forloop {
     }
 
     public static int main1(int[] arr1) {
-        for(int i = 1; i < arr1.length;i ++){
+        for(int i = 1; i <= arr1.length;i ++){
             int flag = 0;
             for(int j = 0 ; j < arr1.length; j++){
                 if(arr1[j] == i){

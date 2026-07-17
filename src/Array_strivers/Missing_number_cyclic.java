@@ -1,5 +1,7 @@
 package Array_strivers;
 
+// O(n) O(1)
+
 public class Missing_number_cyclic {
     static void main(String[] args) {
         int[] arr1 = {0,1,2,4,5};
