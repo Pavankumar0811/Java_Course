@@ -3,7 +3,7 @@ package Array_strivers;
 public class union_using_pointers {
     static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5};
-        int[] arr2 = {1, 2, 3, 6, 7};
+        int[] arr2 = {1, 2, 4, 6, 7};
 
         main1(arr1, arr2);
     }
@@ -11,7 +11,7 @@ public class union_using_pointers {
     public static void main1(int[] arr1 , int[] arr2) {
         int i = 0;  // pointer for arr1
         int j = 0;  // pointer for arr2
-        int prev = Integer.MIN_VALUE;  // track last printed element
+        int prev = 0;  // track last printed element
 
         while(i < arr1.length && j < arr2.length){
             if(arr1[i] <= arr2[j]){

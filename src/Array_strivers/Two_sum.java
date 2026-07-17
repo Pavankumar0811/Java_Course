@@ -1,4 +1,4 @@
-package Hashmap;
+package Array_strivers;
 
 import java.util.Arrays;
 import java.util.HashMap;
